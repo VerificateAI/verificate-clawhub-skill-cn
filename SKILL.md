@@ -24,7 +24,7 @@ metadata:
 
 **OpenClaw 的信任层。** ClawHub 技能功能强大，但并不可信——安全审计（Snyk）反复在社区技能中发现提示注入、恶意软件与凭证窃取，而每一条 AI 答复无论对错都显得信心十足。Verificate 就是那个用来验证其他技能的技能。
 
-它把 OpenClaw 接入托管的 Verificate MCP 服务器（无需注册——每台机器可免费验证 25 次）：
+它把 OpenClaw 接入托管的 Verificate MCP 服务器（无需注册——每台机器可免费验证 100 次）：
 
 - **`validate_ai_output`** — AI 编写代码**及文档**的合入闸门：先运行 17 道确定性现实闸门（模拟/占位符否决、虚构 API 检测、虚假完成检测），任意一道都可否决且不可被覆盖；随后由前沿模型对通过的部分进行评审。返回“通过/拒绝”二元裁决及按严重程度排序的问题清单。
 - **`validate_plan`** — 在编写任何代码之前，先对设计或方案进行验证。
@@ -54,7 +54,7 @@ openclaw mcp add verificate --http https://mcp.verificate.ai/mcp
 
 只读：你的代码只被分析，绝不执行，绝不用于模型训练。本技能唯一的网络请求指向 `https://mcp.verificate.ai/mcp`——没有其他外发流量，无可窃取之物。开源。隐私政策：https://verificate.ai/privacy
 
-免费的 25 次用完后，可开启 30 天试用（无需信用卡，之后 $30/月）：https://verificate.ai/auth/signup
+免费的 100 次用完后，可开启 30 天试用（无需信用卡，之后 $30/月）：https://verificate.ai/auth/signup
 
 ---
 
