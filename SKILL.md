@@ -58,4 +58,4 @@ openclaw mcp add verificate --http https://mcp.verificate.ai/mcp
 
 ---
 
-English listing: https://github.com/Verificate-Dev/verificate-clawhub-skill · All clients: https://github.com/Verificate-Dev/verificate-mcp-quickstart
+English listing: https://github.com/VerificateAI/verificate-clawhub-skill · All clients: https://github.com/VerificateAI/verificate-mcp-quickstart
